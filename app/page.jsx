@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '@/components/globals/Navbar';
 
 const page = () => {
   return (
-    <div>
-      <h1>Zakriya Ki website</h1>
-      <p> this is zakariya's website  </p>
-    </div>
+    <main>
+      <Navbar />
+    </main>
   )
 }
 
