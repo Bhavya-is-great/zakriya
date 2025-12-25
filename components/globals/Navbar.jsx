@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import styles from '@/css/globals/Navbar.module.css';
 import Image from 'next/image';
-import iconBlack from '@/assets/iconBlack.svg';
+import iconBlack from '@/assets/iconBlack.png';
 
 const Navbar = () => {
 
