@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
     --primary-color: #fafafa;
-    --secondary-color: #252525;
+    --secondary-color: #181818;
     --shadow-color: rgba(0, 0, 0, 0.2);
+    --shadow-color-2: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -10,6 +13,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(14px, 1vw, 18px);
+}
+
 
 body {
     background: var(--primary-color);

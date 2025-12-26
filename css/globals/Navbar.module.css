@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
 }
 
 .logoImg {
@@ -19,6 +20,7 @@
     justify-content: center;
     align-items: center;
     padding-right: 1rem;
+    z-index: 199;
 }
 
 .item {
@@ -42,6 +44,7 @@
     gap: 0.25rem;
     padding-right: 1rem;
     cursor: pointer;
+    z-index: 299;
 }
 
 .line {
