@@ -41,7 +41,7 @@
 
 .buttons {
     padding-top: 1rem;
-    z-index: 499;
+    z-index: 99;
 }
 
 .cta {
@@ -55,6 +55,7 @@
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    z-index: 99;
 }
 
 .cta:hover {

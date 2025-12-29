@@ -1,0 +1,41 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 2px solid var(--secondary-color);
+    padding: 1rem;
+    width: fit-content;
+    max-width: 25.5rem;
+    gap: 1.5rem;
+    margin: 2rem;
+    border-radius: 10px;
+    background: var(--primary-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.icon {
+    font-size: 2rem;
+    margin: 0.25rem;
+}
+
+.title {
+    font-size: 1.75rem;
+    margin: 0.25rem;
+}
+
+.detail {
+    font-size: 1.25rem;
+    margin: 0.25rem;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card:hover ~ .icon {
+    transform: scale(2);
+}
