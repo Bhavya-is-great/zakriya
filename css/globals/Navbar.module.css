@@ -12,8 +12,22 @@
     left: 0;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoText {
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+}
+
 .logoImg {
-    width: 3rem;
+    width: 2.5rem;
     height: auto;
 }
 
@@ -27,7 +41,7 @@
 }
 
 .item {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     cursor: pointer;
     transition: all 0.3s ease;
     padding: 0.5rem 1rem;
@@ -37,7 +51,7 @@
 
 .item:hover {
     background: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--accent);
 }
 
 

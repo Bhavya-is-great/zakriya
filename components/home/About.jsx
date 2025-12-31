@@ -26,7 +26,7 @@ const About = () => {
     ];
 
     return (
-        <section className={styles.about}>
+        <section className={styles.about} id='about'>
             <div className={styles.head}>
                 <h1 className={styles.heading}>
                     Why Choose Zakriya?

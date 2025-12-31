@@ -6,8 +6,8 @@
     --secondary-color: #181818;
     --shadow-color: rgba(0, 0, 0, 0.2);
     --shadow-color-2: rgba(0, 0, 0, 0.5);
+    --accent: rgb(0, 186, 172);
 }
-
 
 * {
     margin: 0;

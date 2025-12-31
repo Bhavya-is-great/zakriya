@@ -3,7 +3,7 @@ import styles from '@/css/home/Hero.module.css';
 
 const Hero = () => {
     return (
-        <div className={styles.hero}>
+        <section className={styles.hero} id='home'>
             <div className={styles.videoCont}>
                 <video
                     src='/assets/heroVideo.mp4'
@@ -24,7 +24,7 @@ const Hero = () => {
             <div className={styles.buttons}>
                 <button className={styles.cta}>Let&apos;s Talk</button>
             </div>
-        </div>
+        </section>
     )
 }
 
