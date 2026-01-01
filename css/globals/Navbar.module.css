@@ -87,7 +87,7 @@
 .mode {
     border: 1px solid var(--secondary-color);
     outline: none;
-    background: var(--primary-color);
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,7 +101,7 @@
 @media screen and (max-width: 768px) {
     .items {
         gap: 0.5rem;
-        padding-right: 0;
+        padding-right: 1.5rem;
     }
 
     .item {
