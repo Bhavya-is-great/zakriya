@@ -84,6 +84,19 @@
     transform: translateY(-8px) rotate(-45deg);
 }
 
+.mode {
+    border: 1px solid var(--secondary-color);
+    outline: none;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    font-size: 1.15rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px) {
     .items {

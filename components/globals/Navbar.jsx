@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from '@/css/globals/Navbar.module.css';
 import Image from 'next/image';
 import iconBlack from '@/assets/iconBlack.png';
+import { MdSunny } from "react-icons/md";
 
 const Navbar = () => {
 
@@ -37,6 +38,7 @@ const Navbar = () => {
                 <div className={styles.item} onClick={() => handleScroll("info")}>Info</div>
                 <div className={styles.item} onClick={() => handleScroll("stats")}>Stats</div>
                 <div className={styles.item} onClick={() => handleScroll("contact")}>Contact</div>
+                <button className={styles.mode}><MdSunny /></button>
             </div>
 
             <div className={`${styles.hamburger} ${open ? styles.close : ''}`} onClick={() => { setOpen(!open) }}>
