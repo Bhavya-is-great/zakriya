@@ -8,7 +8,6 @@ import { MdSunny } from "react-icons/md";
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
-    const [mode, setmode] = useState(true);
 
     const handleScroll = (id) => {
         const el = document.getElementById(id);
@@ -21,18 +20,6 @@ const Navbar = () => {
 
         setOpen(false);
     };
-
-    const handleModeChnage = () => {
-        let tempChk = mode;
-        setmode(!mode);
-
-        if(tempChk){
-            document.documentElement.setAttribute("data-theme", "dark");
-        }else{
-            document.documentElement.setAttribute("data-theme", "light");
-        }
-    }
-
 
     return (
         <nav className={styles.nav}>
@@ -50,7 +37,6 @@ const Navbar = () => {
                 <div className={styles.item} onClick={() => handleScroll("info")}>Info</div>
                 <div className={styles.item} onClick={() => handleScroll("stats")}>Stats</div>
                 <div className={styles.item} onClick={() => handleScroll("contact")}>Contact</div>
-                <button onClick={handleModeChnage} className={styles.mode}><MdSunny /></button>
             </div>
 
             <div className={`${styles.hamburger} ${open ? styles.close : ''}`} onClick={() => { setOpen(!open) }}>
