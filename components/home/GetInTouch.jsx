@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import styles from "@/css/home/GetInTouch.module.css";
+import { toast } from "react-toastify";
+import axios from "axios";
 
 const GetInTouch = () => {
     const [name, setName] = useState("");
@@ -30,11 +32,26 @@ const GetInTouch = () => {
         return Object.keys(e).length === 0;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (!validate()) return;
 
-        console.log({ name, email, phone, company, message });
+        try {
+            const res = await axios.post("/api/contact", {
+                name: name,
+                email: email,
+                phone: phone,
+                coName: company,
+                message: message
+            });
+
+            console.log(res)
+
+            toast.success(res.data.message);
+        } catch (err) {
+            toast.error(err?.response?.data?.message || "Something went wrong");
+            console.log(err)
+        }
 
         setName("");
         setEmail("");
