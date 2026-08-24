@@ -1,7 +1,18 @@
+"use client";
 import React from 'react';
 import styles from '@/css/home/Hero.module.css';
 
 const Hero = () => {
+    const handleScrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
     return (
         <section className={styles.hero} id='home'>
             <div className={styles.videoCont}>
@@ -22,7 +33,7 @@ const Hero = () => {
                 Zakriya connects businesses with skilled, verified professionals across multiple industries. We deliver reliable manpower solutions tailored to your specific needs.
             </p>
             <div className={styles.buttons}>
-                <button className={styles.cta}>Let&apos;s Talk</button>
+                <button className={styles.cta} onClick={handleScrollToContact}>Let&apos;s Talk</button>
             </div>
         </section>
     )

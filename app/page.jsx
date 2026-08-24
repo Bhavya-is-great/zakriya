@@ -7,6 +7,7 @@ import Info from '@/components/home/Info';
 import Stats from '@/components/home/Stats';
 import GetInTouch from '@/components/home/GetInTouch';
 import Footer from '@/components/globals/Footer';
+import WhatsAppButton from '@/components/globals/WhatsAppButton';
 
 const page = () => {
   return (
@@ -19,6 +20,7 @@ const page = () => {
       <Stats />
       <GetInTouch />
       <Footer />
+      <WhatsAppButton />
     </main>
   )
 }

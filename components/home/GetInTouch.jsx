@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "@/css/home/GetInTouch.module.css";
 import { toast } from "react-toastify";
 import axios from "axios";
@@ -12,6 +12,15 @@ const GetInTouch = () => {
     const [message, setMessage] = useState("");
 
     const [errors, setErrors] = useState({});
+
+    useEffect(() => {
+        const handlePrefill = (e) => {
+            const serviceName = e.detail.service;
+            setMessage(`Hi, I am interested in your ${serviceName} service. Please provide more details.`);
+        };
+        window.addEventListener('prefill-service', handlePrefill);
+        return () => window.removeEventListener('prefill-service', handlePrefill);
+    }, []);
 
     const validate = () => {
         const e = {};
@@ -150,7 +159,10 @@ const GetInTouch = () => {
                         )}
                     </div>
 
-                    <button className={styles.button}>Send Message</button>
+                    <div className={styles.actionButtons}>
+                        <button className={styles.button}>Send Message</button>
+                        <a href="mailto:info@zakriyaandsons.com" className={styles.mailButton}>Mail Us</a>
+                    </div>
                 </form>
             </div>
         </section>

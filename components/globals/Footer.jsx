@@ -41,9 +41,9 @@ const Footer = () => {
                     <div className={styles.column}>
                         <h3 className={styles.heading}>Get In Touch</h3>
                         <ul className={styles.list}>
-                            <li>Kutch, Gujarat, India</li>
-                            <li>+91-00000 00000</li>
-                            <li>info@zakriya.com</li>
+                            <li>Kandla, Gujarat - India</li>
+                            <li>+91 95860 90092</li>
+                            <li>info@zakriyaandsons.com</li>
                         </ul>
                     </div>
 
